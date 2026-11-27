@@ -25,23 +25,10 @@ img[data-image-dimensions] { max-width: 100%; }
   object-fit: cover;
 }
 .gallery-controls { display: flex; justify-content: space-between; }
-.gallery-controls button, #contact-email button {
+.gallery-controls button {
   padding: .7em 1.2em;
   font: inherit;
   cursor: pointer;
-}
-#contact-email {
-  max-width: 42rem;
-  margin: 2rem auto;
-  display: grid;
-  gap: 1rem;
-}
-#contact-email label { display: grid; gap: .3rem; }
-#contact-email input, #contact-email select, #contact-email textarea {
-  box-sizing: border-box;
-  width: 100%;
-  padding: .65em;
-  font: inherit;
 }
 @media (min-width: 769px) {
   .BlogList {

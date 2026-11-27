@@ -35,13 +35,6 @@ for (const gallery of document.querySelectorAll('.sqs-gallery-block-slideshow'))
   show(0);
 }
 
-document.querySelector('#contact-email')?.addEventListener('submit', event => {
-  event.preventDefault();
-  const fields = new FormData(event.target);
-  const body = fields.get('message') + '\n\n' + fields.get('name') + '\n' + fields.get('email');
-  location.href = 'mailto:' + fields.get('recipient') + '?subject=' + encodeURIComponent(fields.get('subject')) + '&body=' + encodeURIComponent(body);
-});
-
 const author = new URLSearchParams(location.search).get('author');
 if (author) {
   for (const post of document.querySelectorAll('.BlogList-item')) {
